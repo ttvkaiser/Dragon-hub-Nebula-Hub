@@ -115,6 +115,141 @@ Tabs.Home:CreateParagraph("Aligned Paragraph", {
     ContentAlignment = Enum.TextXAlignment.Center
 })
 
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Weapon Tool",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
+    Title = "[ Tween / Distance]",
+    Content = ""
+})
+
+print(Paragraph.Value)
+
+Paragraph:SetValue("This paragraph text is changed!")
+
+print(Paragraph.Value)
+
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Farm Distance",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Tween Speed",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
+    Title = "[ Bring Mob ]",
+    Content = ""
+})
+
+print(Paragraph.Value)
+
+Paragraph:SetValue("This paragraph text is changed!")
+
+print(Paragraph.Value)
+
+local ToggleFastAttack = Tabs.Home:CreateToggle("MyToggle_FastAttack", {Title = "Fast Attack", Default = false })
+
+ToggleFastAttack:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_FastAttack.Value)
+end)
+
+Options.MyToggle_FastAttack:SetValue(false)
+
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Fast Attack Delay",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
+    Title = "[ Other ]",
+    Content = ""
+})
+
+print(Paragraph.Value)
+
+Paragraph:SetValue("This paragraph text is changed!")
+
+print(Paragraph.Value)
+
+-- Create an Auto Dodge toggle in the "Home" tab
+local ToggleAutoDodge = Tabs.Home:CreateToggle("MyToggle_AutoDodge", {
+    Title = "Auto Dodge Skill",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoDodge:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoDodge.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoDodge:SetValue(false)
+
+-- Create an Auto Use Race V3 toggle in the "Home" tab
+local ToggleAutoRaceV3 = Tabs.Home:CreateToggle("MyToggle_AutoRaceV3", {
+    Title = "Auto Use Race V3",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoRaceV3:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoRaceV3.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoRaceV3:SetValue(false)
+
+-- Create an Auto Use Race V4 toggle in the "Home" tab
+local ToggleAutoRaceV4 = Tabs.Home:CreateToggle("MyToggle_AutoRaceV4", {
+    Title = "Auto Use Race V4",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoRaceV4:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoRaceV4.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoRaceV4:SetValue(false)
+
 Tabs.Home:CreateParagraph("Aligned Paragraph", {
     Title = "---Local Player Configuration---",
     Content = "",
