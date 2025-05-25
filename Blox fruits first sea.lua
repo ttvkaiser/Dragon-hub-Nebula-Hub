@@ -56,7 +56,7 @@ Library:Notify{
 }
 
 Tabs.Home:CreateParagraph("Aligned Paragraph", {
-    Title = "---DISCORD SERVER---",
+    Title = "---Discord Server---",
     Content = "",
     TitleAlignment = "Middle",
     ContentAlignment = Enum.TextXAlignment.Center
@@ -116,7 +116,7 @@ Tabs.Home:CreateParagraph("Aligned Paragraph", {
 })
 
 Tabs.Home:CreateParagraph("Aligned Paragraph", {
-    Title = "---LOCAL PLAYER CONFIGURATION---",
+    Title = "---Local Player Configuration---",
     Content = "",
     TitleAlignment = "Middle",
     ContentAlignment = Enum.TextXAlignment.Center
@@ -324,6 +324,139 @@ Tabs.Items:CreateParagraph("Aligned Paragraph", {
 
 Tabs.Items:CreateParagraph("Aligned Paragraph", {
     Title = "---Citizens Quest---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Kitsune Island---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Sea Event---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Farming Leviathan---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Farming Wood Planks---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Prehistoric Island---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.SeaEv:CreateParagraph("Aligned Paragraph", {
+    Title = "---Get Item---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---Maps---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---Fruits---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---Shop---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---Mirage Island---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---Raid---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Other:CreateParagraph("Aligned Paragraph", {
+    Title = "---ESP---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Bypass Anti-Cheat---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Team---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Menu UI---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Redeem---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Water---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Remove Damage---",
+    Content = "",
+    TitleAlignment = "Middle",
+    ContentAlignment = Enum.TextXAlignment.Center
+})
+
+Tabs.Misc:CreateParagraph("Aligned Paragraph", {
+    Title = "---Other---",
     Content = "",
     TitleAlignment = "Middle",
     ContentAlignment = Enum.TextXAlignment.Center
