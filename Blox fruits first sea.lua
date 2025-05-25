@@ -373,6 +373,57 @@ Tabs.Home:CreateParagraph("Aligned Paragraph", {
     ContentAlignment = Enum.TextXAlignment.Center
 })
 
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Count Player",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+Tabs.Home:CreateButton{
+    Title = "Hop Server On Count Server",
+    Description = "",
+    Callback = function()
+        Window:Dialog{
+            Title = "Hop Server",
+            Content = "Teleport now!",
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                        print("Confirmed the dialog.")
+                    end
+                },
+            }
+        }
+    end
+}
+
+Tabs.Home:CreateButton{
+    Title = "Rejoin",
+    Description = "",
+    Callback = function()
+        Window:Dialog{
+            Title = "Rejoin server",
+            Content = "...",
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                        print("Confirmed the dialog.")
+                    end
+                },
+            }
+        }
+    end
+}
+
 Tabs.Home:CreateParagraph("Aligned Paragraph", {
     Title = "---Get Stats---",
     Content = "",
