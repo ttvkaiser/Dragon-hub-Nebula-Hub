@@ -135,7 +135,7 @@ local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
 
 print(Paragraph.Value)
 
-Paragraph:SetValue("This paragraph text is changed!")
+Paragraph:SetValue("")
 
 print(Paragraph.Value)
 
@@ -172,7 +172,7 @@ local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
 
 print(Paragraph.Value)
 
-Paragraph:SetValue("This paragraph text is changed!")
+Paragraph:SetValue("")
 
 print(Paragraph.Value)
 
@@ -204,7 +204,7 @@ local Paragraph = Tabs.Home:CreateParagraph("Paragraph", {
 
 print(Paragraph.Value)
 
-Paragraph:SetValue("This paragraph text is changed!")
+Paragraph:SetValue("")
 
 print(Paragraph.Value)
 
