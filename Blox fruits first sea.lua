@@ -431,6 +431,89 @@ Tabs.Home:CreateParagraph("Aligned Paragraph", {
     ContentAlignment = Enum.TextXAlignment.Center
 })
 
+local Dropdown = Tabs.Home:CreateDropdown("Dropdown", {
+    Title = "Point Stats",
+    Values = {"one", "two", "three", "four", "five"},
+    Multi = false,
+    Default = 1,
+})
+
+Dropdown:SetValue("four")
+
+Dropdown:OnChanged(function(Value)
+    print("Dropdown changed:", Value)
+end)
+
+-- Create an Auto Melee toggle in the "Home" tab
+local ToggleAutoMelee = Tabs.Home:CreateToggle("MyToggle_AutoMelee", {
+    Title = "Auto Melee",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoMelee:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoMelee.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoMelee:SetValue(false)
+
+-- Create an Auto Defense toggle in the "Home" tab
+local ToggleAutoDefense = Tabs.Home:CreateToggle("MyToggle_AutoDefense", {
+    Title = "Auto Defense",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoDefense:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoDefense.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoDefense:SetValue(false)
+
+-- Create an Auto Sword toggle in the "Home" tab
+local ToggleAutoSword = Tabs.Home:CreateToggle("MyToggle_AutoSword", {
+    Title = "Auto Sword",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoSword:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoSword.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoSword:SetValue(false)
+
+-- Create an Auto Gun toggle in the "Home" tab
+local ToggleAutoGun = Tabs.Home:CreateToggle("MyToggle_AutoGun", {
+    Title = "Auto Gun",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoGun:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoGun.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoGun:SetValue(false)
+
+-- Create an Auto Blox Fruits toggle in the "Home" tab
+local ToggleAutoFruit = Tabs.Home:CreateToggle("MyToggle_AutoFruit", {
+    Title = "Auto Blox Fruits",
+    Default = false
+})
+
+-- Handle toggle change
+ToggleAutoFruit:OnChanged(function()
+    print("Toggle changed:", Options.MyToggle_AutoFruit.Value)
+end)
+
+-- Set default value
+Options.MyToggle_AutoFruit:SetValue(false)
+
 Tabs.Main:CreateParagraph("Aligned Paragraph", {
     Title = "---Farming Level---",
     Content = "",
