@@ -21,6 +21,17 @@ local calcTab = window:AddTab("Calc")
 
 -- Example Content --
 mainTab:AddLabel("Local Player Configuration")
+farmPlusTab:AddLabel("Auto lift soon")
+calcTab:AddLabel("Stats per hour like rebs and strength")
+creditsTab:AddLabel([[
+Credits to Liam, Evx, and Ryuxc for creating the script.
+Discord server:
+Dragon Hub - https://discord.gg/WPYK5C2w
+Nebula Hub - https://discord.gg/A4MP4UYC4w
+]])
+rocksTab:AddLabel("Auto punch any rocks from anywhere")
+paidTab:AddLabel("Paid features: buy the paid version, DM liamofdarkness on Discord to purchase.")
+
 
 mainTab:AddTextBox("free click", function(text) -- u can add any text to "text"
 	game:GetService("ReplicatedStorage").Events.FreeGifts.Gift2:FireServer(text,"Clicks",false,false,"Normal")
@@ -40,14 +51,3 @@ local switch = mainTab:AddSwitch("No Clip", function(bool)
 	 -- toggle_god_mode(bool)
 end)
 switch:Set(true)
-
-farmPlusTab:AddLabel("Auto lift soon")
-calcTab:AddLabel("Stats per hour like rebs and strength")
-creditsTab:AddLabel([[
-Credits to Liam, Evx, and Ryuxc for creating the script.
-Discord server:
-Dragon Hub - https://discord.gg/WPYK5C2w
-Nebula Hub - https://discord.gg/A4MP4UYC4w
-]])
-rocksTab:AddLabel("Auto punch any rocks from anywhere")
-paidTab:AddLabel("Paid features: buy the paid version, DM liamofdarkness on Discord to purchase.")
