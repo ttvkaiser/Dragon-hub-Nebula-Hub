@@ -77,11 +77,7 @@ UserInputService.JumpRequest:Connect(function()
 	end
 end)
 
-local noclipSwitch = mainTab:AddSwitch("No Clip", function(bool)
-	print("No Clip toggled:", bool)
-end)
-noclipSwitch:Set(false)
-
+-- i fucking suck with coding... sorry liam
 local RunService = game:GetService("RunService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
