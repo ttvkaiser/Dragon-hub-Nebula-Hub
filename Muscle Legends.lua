@@ -20,6 +20,27 @@ local rocksTab = window:AddTab("Rocks")
 local calcTab = window:AddTab("Calc")
 
 -- Example Content --
+mainTab:AddLabel("Local Player Configuration")
+
+features:AddTextBox("free click", function(text) -- u can add any text to "text"
+	game:GetService("ReplicatedStorage").Events.FreeGifts.Gift2:FireServer(text,"Clicks",false,false,"Normal")
+end)
+
+local switch = features:AddSwitch("Set Walkspeed", function(bool)
+	 -- toggle_god_mode(bool)
+end)
+switch:Set(true)
+
+local switch = features:AddSwitch("Infinite Jumps", function(bool)
+	 -- toggle_god_mode(bool)
+end)
+switch:Set(true)
+
+local switch = features:AddSwitch("No Clip", function(bool)
+	 -- toggle_god_mode(bool)
+end)
+switch:Set(true)
+
 farmPlusTab:AddLabel("Auto lift soon")
 calcTab:AddLabel("Stats per hour like rebs and strength")
 creditsTab:AddLabel([[
