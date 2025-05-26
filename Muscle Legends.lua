@@ -21,6 +21,48 @@ local calcTab = window:AddTab("Calc")
 
 -- Labels --
 mainTab:AddLabel("Local Player Configuration")
+infoTab:AddLabel([[
+
+[Dragon Hub Script]
+Version: 1.0.2
+
+------------------------------------------------------
+	
+Features:
+- Auto Strength & Durability
+- Auto Rebirth
+- Auto Gems
+- Anti-AFK
+- Speed Boost
+- Unlock All Areas
+
+------------------------------------------------------
+
+How to Use:
+Just toggle on what you need. Most features work best when you have paid version
+
+------------------------------------------------------
+
+Supported Executors:
+Synapse X, Fluxus, KRNL, Delta, Ronix and most modern Level 7 executors.
+
+------------------------------------------------------
+	
+Notes:
+- Don’t go overboard in public servers.
+- Use at your own risk. Me and FLX_Liam not responsible for bans.
+- If something breaks, try rejoining or resetting the script, or report it in the dragon hub discord!!.
+
+------------------------------------------------------
+
+Credits:
+Script made by [ttvkaiser & FLX_Liam]
+UI built by [memejames on GitHub]
+
+------------------------------------------------------
+
+Enjoy!
+]])
 farmPlusTab:AddLabel("Auto lift soon")
 calcTab:AddLabel("Stats per hour like rebs and strength")
 creditsTab:AddLabel([[
