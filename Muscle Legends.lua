@@ -33,21 +33,72 @@ rocksTab:AddLabel("Auto punch any rocks from anywhere")
 paidTab:AddLabel("Paid features: buy the paid version, DM liamofdarkness on Discord to purchase.")
 
 -- local player config
-mainTab:AddTextBox("Free Click", function(text)
-	game:GetService("ReplicatedStorage").Events.FreeGifts.Gift2:FireServer(text, "Clicks", false, false, "Normal")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local speedValue = 16
+local speedEnabled = false
+
+-- this also helps, btw i have these comments for you liam
+mainTab:AddTextBox("WalkSpeed Amount", function(text)
+	local num = tonumber(text)
+	if num then
+		speedValue = num
+		if speedEnabled and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+			LocalPlayer.Character.Humanoid.WalkSpeed = speedValue
+		end
+	end
 end)
 
-local wsSwitch = mainTab:AddSwitch("Set Walkspeed", function(bool)
-	print("Walkspeed toggled:", bool)
+-- the walkspeed switch??
+local wsSwitch = mainTab:AddSwitch("Enable WalkSpeed", function(enabled)
+	speedEnabled = enabled
+	local char = LocalPlayer.Character
+	if char and char:FindFirstChild("Humanoid") then
+		char.Humanoid.WalkSpeed = enabled and speedValue or 16
+	end
 end)
 wsSwitch:Set(false)
 
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local infiniteJump = false
+
 local jumpSwitch = mainTab:AddSwitch("Infinite Jumps", function(bool)
-	print("Infinite Jumps toggled:", bool)
+	infiniteJump = bool
 end)
 jumpSwitch:Set(false)
+
+UserInputService.JumpRequest:Connect(function()
+	if infiniteJump and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("Humanoid") then
+		LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	end
+end)
 
 local noclipSwitch = mainTab:AddSwitch("No Clip", function(bool)
 	print("No Clip toggled:", bool)
 end)
 noclipSwitch:Set(false)
+
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local noclip = false
+
+local noclipSwitch = mainTab:AddSwitch("No Clip", function(bool)
+	noclip = bool
+end)
+noclipSwitch:Set(false)
+
+RunService.Stepped:Connect(function()
+	if noclip and LocalPlayer.Character then
+		for _, part in pairs(LocalPlayer.Character:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = false
+			end
+		end
+	end
+end)
